@@ -1,0 +1,224 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FireWall1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/FireWall1.res" /d "_DEBUG" /d "_AFXDLL" "J:\Firewall·À»ðÇ½\FireWall1.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/FireWall1.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"J:\Firewall·À»ðÇ½\authentication.cpp"
+"J:\Firewall·À»ðÇ½\config.cpp"
+"J:\Firewall·À»ðÇ½\DmDlg.cpp"
+"J:\Firewall·À»ðÇ½\FireWall1.cpp"
+"J:\Firewall·À»ðÇ½\FireWall1Doc.cpp"
+"J:\Firewall·À»ðÇ½\FireWall1View.cpp"
+"J:\Firewall·À»ðÇ½\global.cpp"
+"J:\Firewall·À»ðÇ½\inThread.cpp"
+"J:\Firewall·À»ðÇ½\ipfilter.cpp"
+"J:\Firewall·À»ðÇ½\LogDlg.cpp"
+"J:\Firewall·À»ðÇ½\MainFrm.cpp"
+"J:\Firewall·À»ðÇ½\OptionDlg.cpp"
+"J:\Firewall·À»ðÇ½\outnat.cpp"
+"J:\Firewall·À»ðÇ½\Page1.cpp"
+"J:\Firewall·À»ðÇ½\Page10.cpp"
+"J:\Firewall·À»ðÇ½\Page11.cpp"
+"J:\Firewall·À»ðÇ½\Page12.cpp"
+"J:\Firewall·À»ðÇ½\Page13.cpp"
+"J:\Firewall·À»ðÇ½\Page2.cpp"
+"J:\Firewall·À»ðÇ½\Page3.cpp"
+"J:\Firewall·À»ðÇ½\Page4.cpp"
+"J:\Firewall·À»ðÇ½\Page5.cpp"
+"J:\Firewall·À»ðÇ½\Page6.cpp"
+"J:\Firewall·À»ðÇ½\PropSheet.cpp"
+"J:\Firewall·À»ðÇ½\PropSheet2.cpp"
+"J:\Firewall·À»ðÇ½\Thread.cpp"
+"J:\Firewall·À»ðÇ½\writethread.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/FireWall1.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"J:\Firewall·À»ðÇ½\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7F.tmp" with contents
+[
+ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/FireWall1.pdb" /debug /machine:I386 /out:"Debug/FireWall1.exe" /pdbtype:sept 
+".\Debug\authentication.obj"
+".\Debug\config.obj"
+".\Debug\DmDlg.obj"
+".\Debug\FireWall1.obj"
+".\Debug\FireWall1Doc.obj"
+".\Debug\FireWall1View.obj"
+".\Debug\global.obj"
+".\Debug\inThread.obj"
+".\Debug\ipfilter.obj"
+".\Debug\LogDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\OptionDlg.obj"
+".\Debug\outnat.obj"
+".\Debug\Page1.obj"
+".\Debug\Page10.obj"
+".\Debug\Page11.obj"
+".\Debug\Page12.obj"
+".\Debug\Page13.obj"
+".\Debug\Page2.obj"
+".\Debug\Page3.obj"
+".\Debug\Page4.obj"
+".\Debug\Page5.obj"
+".\Debug\Page6.obj"
+".\Debug\PropSheet.obj"
+".\Debug\PropSheet2.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Thread.obj"
+".\Debug\writethread.obj"
+".\Debug\FireWall1.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+authentication.cpp
+J:\Firewall·À»ðÇ½\authentication.cpp(58) : warning C4101: 'buf' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(58) : warning C4101: 'pBegin' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(58) : warning C4101: 'pszText' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(58) : warning C4101: 'pAuthorization' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(58) : warning C4101: 'pszCode' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(213) : warning C4101: 'length' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(319) : warning C4018: '>=' : signed/unsigned mismatch
+J:\Firewall·À»ðÇ½\authentication.cpp(359) : warning C4101: 'tempNO' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(358) : warning C4101: 'TCPLen' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(399) : warning C4101: 'ch' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(448) : warning C4018: '==' : signed/unsigned mismatch
+J:\Firewall·À»ðÇ½\authentication.cpp(417) : warning C4101: 'pEtherHead' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(664) : warning C4101: 'Ttlen' : unreferenced local variable
+J:\Firewall·À»ðÇ½\authentication.cpp(665) : warning C4101: 'length' : unreferenced local variable
+config.cpp
+J:\Firewall·À»ðÇ½\config.cpp(195) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\config.cpp(233) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\config.cpp(271) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\config.cpp(309) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\config.cpp(348) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\config.cpp(387) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+DmDlg.cpp
+FireWall1.cpp
+FireWall1Doc.cpp
+FireWall1View.cpp
+J:\Firewall·À»ðÇ½\Propsheet.h(17) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+J:\Firewall·À»ðÇ½\FireWall1View.cpp(1156) : warning C4101: 'pbuf' : unreferenced local variable
+J:\Firewall·À»ðÇ½\FireWall1View.cpp(1261) : warning C4101: 'pbuf' : unreferenced local variable
+J:\Firewall·À»ðÇ½\FireWall1View.cpp(1259) : warning C4101: 'len' : unreferenced local variable
+J:\Firewall·À»ðÇ½\FireWall1View.cpp(1326) : warning C4101: 'pbuf' : unreferenced local variable
+J:\Firewall·À»ðÇ½\FireWall1View.cpp(1361) : warning C4101: 'pbuf' : unreferenced local variable
+J:\Firewall·À»ðÇ½\FireWall1View.cpp(1398) : warning C4101: 'pbuf' : unreferenced local variable
+global.cpp
+J:\Firewall·À»ðÇ½\global.cpp(87) : warning C4018: '<' : signed/unsigned mismatch
+J:\Firewall·À»ðÇ½\global.cpp(495) : warning C4018: '<' : signed/unsigned mismatch
+J:\Firewall·À»ðÇ½\global.cpp(502) : warning C4018: '<' : signed/unsigned mismatch
+J:\Firewall·À»ðÇ½\global.cpp(533) : warning C4018: '==' : signed/unsigned mismatch
+J:\Firewall·À»ðÇ½\global.cpp(556) : warning C4018: '==' : signed/unsigned mismatch
+J:\Firewall·À»ðÇ½\global.cpp(581) : warning C4018: '<' : signed/unsigned mismatch
+J:\Firewall·À»ðÇ½\global.cpp(1189) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1199) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1211) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1221) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1233) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1243) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1263) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1272) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1282) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1291) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1300) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1309) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\global.cpp(1323) : warning C4018: '<' : signed/unsigned mismatch
+inThread.cpp
+ipfilter.cpp
+J:\Firewall·À»ðÇ½\ipfilter.cpp(1864) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+J:\Firewall·À»ðÇ½\ipfilter.cpp(1875) : warning C4244: 'argument' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+J:\Firewall·À»ðÇ½\ipfilter.cpp(1891) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+J:\Firewall·À»ðÇ½\ipfilter.cpp(2255) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+LogDlg.cpp
+MainFrm.cpp
+OptionDlg.cpp
+outnat.cpp
+J:\Firewall·À»ðÇ½\outnat.cpp(289) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+J:\Firewall·À»ðÇ½\outnat.cpp(249) : warning C4101: 'pUDPheader' : unreferenced local variable
+J:\Firewall·À»ðÇ½\outnat.cpp(394) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+J:\Firewall·À»ðÇ½\outnat.cpp(430) : warning C4244: '=' : conversion from 'unsigned short' to 'unsigned char', possible loss of data
+J:\Firewall·À»ðÇ½\outnat.cpp(362) : warning C4101: 'pUDPheader' : unreferenced local variable
+Page1.cpp
+J:\Firewall·À»ðÇ½\Page1.cpp(626) : warning C4101: 'pbuf' : unreferenced local variable
+Page10.cpp
+Page11.cpp
+Page12.cpp
+Page13.cpp
+Page2.cpp
+Page3.cpp
+J:\Firewall·À»ðÇ½\Page3.cpp(296) : warning C4101: 'pbuf' : unreferenced local variable
+Generating Code...
+J:\Firewall·À»ðÇ½\ipfilter.cpp(1875) : warning C4700: local variable 'dstAddr' used without having been initialized
+J:\Firewall·À»ðÇ½\FireWall1View.cpp(1249) : warning C4715: 'CFireWall1View::GetCommand' : not all control paths return a value
+Compiling...
+Page4.cpp
+J:\Firewall·À»ðÇ½\Page4.cpp(432) : warning C4101: 'pbuf' : unreferenced local variable
+J:\Firewall·À»ðÇ½\Page4.cpp(684) : warning C4101: 'pbuf' : unreferenced local variable
+Page5.cpp
+J:\Firewall·À»ðÇ½\Page5.cpp(77) : warning C4101: 'pbuf' : unreferenced local variable
+J:\Firewall·À»ðÇ½\Page5.cpp(225) : warning C4101: 'pbuf' : unreferenced local variable
+Page6.cpp
+J:\Firewall·À»ðÇ½\Page6.cpp(123) : warning C4101: 'pbuf' : unreferenced local variable
+PropSheet.cpp
+J:\Firewall·À»ðÇ½\PropSheet.h(17) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+PropSheet2.cpp
+Thread.cpp
+writethread.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP81.tmp" with contents
+[
+/nologo /o"Debug/FireWall1.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\authentication.sbr"
+".\Debug\config.sbr"
+".\Debug\DmDlg.sbr"
+".\Debug\FireWall1.sbr"
+".\Debug\FireWall1Doc.sbr"
+".\Debug\FireWall1View.sbr"
+".\Debug\global.sbr"
+".\Debug\inThread.sbr"
+".\Debug\ipfilter.sbr"
+".\Debug\LogDlg.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\OptionDlg.sbr"
+".\Debug\outnat.sbr"
+".\Debug\Page1.sbr"
+".\Debug\Page10.sbr"
+".\Debug\Page11.sbr"
+".\Debug\Page12.sbr"
+".\Debug\Page13.sbr"
+".\Debug\Page2.sbr"
+".\Debug\Page3.sbr"
+".\Debug\Page4.sbr"
+".\Debug\Page5.sbr"
+".\Debug\Page6.sbr"
+".\Debug\PropSheet.sbr"
+".\Debug\PropSheet2.sbr"
+".\Debug\Thread.sbr"
+".\Debug\writethread.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP81.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+FireWall1.exe - 0 error(s), 65 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[InNet]
+4
+
+[OutNet]
+3
+
+[DM]
+
+
+[INNETMASK]
+255.255.255.0
+
+[jl]

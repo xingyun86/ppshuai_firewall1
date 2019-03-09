@@ -1,0 +1,69 @@
+typedef struct _FilterConfig {
+	ULONG  	logMask;
+//#define CFG_CLR_SIZE	(sizeof(FilterConfig) - sizeof(ULONG))
+//#define CFG_CLR_START	in_number
+	USHORT    in_number;//adapter num     
+	USHORT    out_number;//adapter num     
+	USHORT    dm_number;//adapter num  
+	USHORT    media_type;//gj
+	ULONG	    in_ip;
+	ULONG	    out_ip;
+	ULONG	    dm_ip;
+	ULONG     in_mask;
+	ULONG     out_mask;
+	ULONG     dm_mask;
+	BOOL      discardIcmp;
+	BOOL	  discardMulticast;
+	BOOL		discardNonIp;
+	BOOL		discardOtherIp;
+	BOOL		discardSuspectOffset;
+	BOOL		discardFragmentedICMP;
+	BOOL		discardAttackICMP;
+	BOOL     discardRouteIp;
+} FilterConfig;
+//流量统计信息
+typedef struct _Statistics {
+	unsigned short		running;
+	SYSTEMTIME   starttime;
+	ULONG	p_insideFiltered;//过滤掉的内网包计数
+	ULONG  p_dmFiltered;
+	ULONG	p_outsideFiltered;//过滤掉的外网包计数
+	ULONG	p_insideRx;//内网卡接收到的包总数:成功的+过滤掉的;
+	ULONG  p_dmRx;
+	ULONG	p_outsideRx;
+	ULONG	p_insideTx;//成功的进站包数
+	ULONG  p_dmTx;
+	ULONG	p_outsideTx;//成功的出站包数
+	ULONG	b_insideFiltered;//过滤掉的内网包总长（bytes）
+	ULONG   b_dmFiltered;
+	ULONG	b_outsideFiltered;
+	ULONG	b_insideRx;
+	ULONG  b_dmRx;
+	ULONG	b_outsideRx;
+	ULONG	b_insideTx;
+	ULONG  b_dmTx;
+	ULONG	b_outsideTx;
+    ULONG  f_outsideOtherIp;
+	ULONG   f_insideOtherIp;
+	ULONG	f_insideMcast;
+	ULONG	f_outsideMcast;
+	ULONG	f_insideTcpPort;
+	ULONG	f_insideUdpPort;
+	ULONG	f_insideIcmpType;
+	ULONG	f_outsideIcmpType;
+
+	ULONG	f_outsideRejectTable;
+	ULONG	f_outsideSuspectOffset;
+	ULONG	f_outsideIcmpFrag;
+	ULONG	f_outsideSmurfDos;
+	ULONG	f_outsidePongDos;
+
+	ULONG	f_insideAcceptTable;
+	ULONG	f_insideSuspectOffset;
+	ULONG	f_insideIcmpFrag;
+	ULONG	f_insideSmurfDos;
+	ULONG	f_insidePongDos;
+
+	ULONG	insideTCPreset;
+	ULONG	outsideTCPreset;
+} Statistics;

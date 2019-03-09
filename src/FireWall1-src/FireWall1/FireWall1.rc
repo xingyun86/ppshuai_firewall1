@@ -1,0 +1,892 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FireWall1.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FireWall1.ico"
+IDR_FIREWATYPE          ICON    DISCARDABLE     "res\\FireWall1Doc.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "防火墙(&F)"
+    BEGIN
+        MENUITEM "配置(&O)",                    ID_OPTION
+        MENUITEM "启动防火墙(&S)",              ID_STARTFIREWALL
+        MENUITEM "关闭防火墙(&C)",              ID_SHUTDOWNFIREWALL
+        MENUITEM "查看日志(&L)",                ID_TOOL_LOG
+        MENUITEM "停止查看日志(&G)",            ID_STOP_LOG
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 FireWall1(&A)...",       ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_ICON MENU DISCARDABLE 
+BEGIN
+    POPUP "防火墙(&F)"
+    BEGIN
+        MENUITEM "配置(&O)",                    ID_OPTION
+        MENUITEM "启动防火墙(&S)",              ID_STARTFIREWALL
+        MENUITEM "关闭防火墙(&C)",              ID_SHUTDOWNFIREWALL
+        MENUITEM "查看日志(&L)",                ID_TOOL_LOG
+        MENUITEM "停止查看日志(&G)",            ID_STOP_LOG
+        MENUITEM "关于(&A)",                    ID_APP_ABOUT
+        MENUITEM "退出(&E)",                    ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 FireWall1"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDI_ICON1,IDC_STATIC,7,7,21,21
+    LTEXT           "FireWall 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有： 托普研究院",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "咨询电话：(028)2960311",IDC_STATIC,40,40,119,8
+    LTEXT           "《防火墙》项目组",IDC_STATIC,40,55,119,8
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 347, 228
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "网络策略"
+FONT 8, "System"
+BEGIN
+    GROUPBOX        "外网设置：",IDC_STATIC,7,7,162,61
+    GROUPBOX        "内网设置：",IDC_STATIC,7,74,163,61
+    GROUPBOX        "DM区设置：",IDC_STATIC,178,7,162,62
+    LTEXT           "选择网卡：",IDC_STATIC,15,19,41,8
+    LTEXT           "IP地址：",IDC_STATIC,15,34,41,8
+    LTEXT           "子网掩码：",IDC_STATIC,15,52,41,8
+    LTEXT           "选择网卡：",IDC_STATIC,16,87,41,8
+    LTEXT           "IP地址：",IDC_STATIC,16,102,41,8
+    LTEXT           "子网掩码：",IDC_STATIC,16,118,41,8
+    COMBOBOX        IDC_COMBO2,61,18,98,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,62,85,98,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,61,33,98,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT4,61,51,98,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT5,62,101,98,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT6,62,117,98,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "选择网卡：",IDC_STATIC,187,20,41,8
+    LTEXT           "IP地址：",IDC_STATIC,187,36,41,8
+    LTEXT           "子网掩码：",IDC_STATIC,187,53,41,8
+    COMBOBOX        IDC_COMBO4,233,19,98,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT7,233,35,98,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT8,233,51,98,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "动态端口NAT设置：",IDC_STATIC,7,142,165,67
+    GROUPBOX        "静态端口NAT设置(IP:端口)",IDC_STATIC,178,74,163,135
+    LTEXT           "起始端口",IDC_STATIC,13,155,33,8
+    EDITTEXT        IDC_EDIT2,48,154,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,127,175,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,127,154,40,12,ES_AUTOHSCROLL
+    LTEXT           "结束端口",IDC_STATIC,89,157,33,8
+    LTEXT           "TCP超时",IDC_STATIC,13,174,33,8
+    LTEXT           "UDP超时",IDC_STATIC,89,175,33,8
+    EDITTEXT        IDC_EDIT12,89,191,54,12,ES_AUTOHSCROLL
+    LTEXT           "最大端口转换数：",IDC_STATIC,13,192,65,8
+    EDITTEXT        IDC_EDIT9,48,173,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,184,101,151,40,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "确认",IDC_BUTTON1,59,212,50,12
+    PUSHBUTTON      "取消",IDC_BUTTON2,143,213,50,12
+    LTEXT           "TCP设置：",IDC_STATIC,185,87,38,8
+    EDITTEXT        IDC_EDIT16,184,166,151,40,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "UDP设置：",IDC_STATIC,185,152,40,8
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 333, 236
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "包过滤规则"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "全局设置",IDC_STATIC,14,9,102,164
+    CONTROL         "检查对内网的访问",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,21,148,80,10
+    CONTROL         "检查对外网的访问",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,21,120,80,10
+    CONTROL         "检查对DM区的访问",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,21,134,82,10
+    CONTROL         "不允许组播",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,22,56,10
+    CONTROL         "丢弃非Ip包",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,36,54,10
+    CONTROL         "丢弃别的Ip包",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,50,62,10
+    CONTROL         "丢弃可疑的偏移",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,64,72,10
+    CONTROL         "丢弃分段的ICMP包",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,78,81,10
+    CONTROL         "丢弃可疑的ICMP包",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,92,81,10
+    PUSHBUTTON      "确认",IDC_BUTTON1,98,214,50,12
+    PUSHBUTTON      "取消",IDC_BUTTON2,159,214,50,12
+    GROUPBOX        "内网IP拒绝表",IDC_STATIC,122,9,98,164
+    EDITTEXT        IDC_EDIT1,125,21,91,148,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "外网IP拒绝表",IDC_STATIC,227,10,99,164
+    EDITTEXT        IDC_EDIT10,230,22,90,148,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "内网主机配置",IDC_BUTTON3,14,178,76,33,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         "禁止ICMP",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,106,49,10
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 298, 219
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "缺省配置"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "请选择安全级别",IDC_STATIC_LEVEL,14,17,83,55,WS_GROUP
+    CONTROL         "高",IDC_RADIO_HIGH,"Button",BS_AUTORADIOBUTTON | 
+                    BS_NOTIFY | WS_GROUP | WS_TABSTOP,30,31,28,10
+    CONTROL         "中",IDC_RADIO_MIDDLE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,30,43,29,11
+    CONTROL         "低",IDC_RADIO_LOW,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,30,58,30,11
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,214,163,45,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,214,185,46,14
+    CONTROL         "检查外网包",IDC_CHECK_COMEIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,104,19,53,11
+    CONTROL         "检查内网包",IDC_CHECK_GOOUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,104,31,54,11
+    CONTROL         "检查内部出去的ICMP",IDC_CHECK_INtoOUTICMP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_GROUP | WS_TABSTOP,
+                    181,18,84,9
+    CONTROL         "检查外部进来的ICMP",IDC_CHECK_OUTtoINICMP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_GROUP | WS_TABSTOP,
+                    181,30,91,10
+    CONTROL         "检查内部出去的IGMP",IDC_CHECK_INtoOUTIGMP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_GROUP | WS_TABSTOP,
+                    181,43,86,10
+    CONTROL         "检查外部进来的IGMP",IDC_CHECK_OUTtoINIGMP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_GROUP | WS_TABSTOP,
+                    181,55,84,10
+    CONTROL         "允许访问外部HTTP",IDC_CHECK_INtoOUT80,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,14,83,81,11
+    CONTROL         "允许访问DM HTTP",IDC_CHECK_OUTtoIN80,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,14,95,84,11
+    CONTROL         "允许访问外部FTP",IDC_CHECK_INtoOUTFTP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,14,107,74,9
+    CONTROL         "允许访问DM FTP",IDC_CHECK_OUTtoINFTP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,14,119,74,10
+    CONTROL         "允许访问外部NBT",IDC_CHECK_INtoOUTNBT,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,14,130,77,9
+    CONTROL         "允许访问DM NBT",IDC_CHECK_OUTtoINNBT,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,14,140,78,8
+    CONTROL         "允许访问外部TELNET",IDC_CHECK_INtoOUTTELNET,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,99,84,86,10
+    CONTROL         "允许访问DM TELNET",IDC_CHECK_OUTtoINTELNET,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,99,95,87,8
+    CONTROL         "允许访问外部SNMP",IDC_CHECK_INtoOUTSNMP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,99,107,82,9
+    CONTROL         "允许访问DM SNMP",IDC_CHECK_OUTtoINSNMP,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,99,117,84,9
+    CONTROL         "允许FINGER",IDC_CHECK_FINGER,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,99,128,85,8
+    CONTROL         "允许内部出去端口<=1024,不包括以上端口",
+                    IDC_CHECK_INtoOUT1024S,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,14,151,163,8
+    CONTROL         "允许内部出去端口>1024,不包括以上端口",
+                    IDC_CHECK_INtoOUT1024L,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,14,161,162,8
+    CONTROL         "允许外部进入端口>1024,不包括以上端口",
+                    IDC_CHECK_OUTtoIN1024L,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,14,170,157,10
+    CONTROL         "允许外部进入端口<=1024,不包括以上端口",
+                    IDC_CHECK_OUTtoIN1024S,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,14,181,158,9
+    CONTROL         "允许外部网络的DNS",IDC_CHECK_DNS,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,99,140,85,9
+    GROUPBOX        "TCP和UDP端口限制",IDC_STATIC,7,74,184,124
+    CONTROL         "允许JAVA",IDC_CHECK_JAVA,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,210,97,55,9
+    CONTROL         "允许Script",IDC_CHECK_SCRIPT,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,210,115,55,10
+    CONTROL         "允许Activex",IDC_CHECK_ACTIVEX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,210,130,57,14
+    GROUPBOX        "协议内容限制",IDC_STATIC_PRO,199,77,81,76
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 298, 218
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "服务策略"
+FONT 10, "System"
+BEGIN
+    CONTROL         "协议内容过滤",IDC_CHECK_ISPRO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,11,95,14
+    CONTROL         "TCP",IDC_CHECK_TCP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,23,32,14
+    CONTROL         "JAVA",IDC_CHECK_JAVA,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,56,45,31,11
+    CONTROL         "Script",IDC_CHECK_SCRIPT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,56,56,38,12
+    CONTROL         "Activex",IDC_CHECK_ACTIVEX,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,56,69,35,10
+    GROUPBOX        "HTTP",IDC_STATIC_HTTP,48,38,48,52,WS_GROUP
+    CONTROL         "HTTP",IDC_CHECK_HTTP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,58,33,10
+    CONTROL         "FTP",IDC_CHECK_FTP,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,8,96,29,10
+    CONTROL         "SMTP",IDC_CHECK_SMTP,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,8,116,31,11
+    CONTROL         "Telnet",IDC_CHECK_TELNET,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,8,137,31,12
+    CONTROL         "UDP",IDC_CHECK_UDP,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,122,23,33,10
+    CONTROL         "URL阻断",IDC_CHECK_ISURL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,172,11,51,14
+    LTEXT           "请填写不进行协议内容过滤的网站名,使用回车隔开",
+                    IDC_STATIC_FILTERURL,50,95,71,25
+    EDITTEXT        IDC_EDIT_NOFILTERURL,49,121,76,32,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Other",IDC_CHECK_OTHER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,56,81,32,8
+    LTEXT           "请输入关键字，用回车隔开",IDC_STATIC_OTHERKEY,103,38,51,
+                    26
+    EDITTEXT        IDC_EDIT_OTHERKEY,102,65,47,30,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "请填写要阻断的URL地址;用回车隔开",IDC_STATIC_URL,173,28,
+                    86,16
+    EDITTEXT        IDC_EDIT_URL,173,49,86,104,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,66,170,49,15
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,145,170,44,15
+END
+
+IDD_DIALOG6 DIALOG DISCARDABLE  0, 0, 298, 218
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "用户验证"
+FONT 10, "System"
+BEGIN
+    CONTROL         "进行用户验证",IDC_CHECK_ISUSERVER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,15,67,13
+    EDITTEXT        IDC_EDIT_USER,160,35,36,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_USERPAS,34,65,66,80,LBS_SORT | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "USER:PASSWORD",IDC_STATIC_USERVER,36,47,65,11
+    LTEXT           "填加用户",IDC_STATIC_ADDUSER,160,19,38,14
+    LTEXT           "User",IDC_STATIC_USER,140,36,18,13
+    EDITTEXT        IDC_EDIT_PASSWD,161,66,36,15,ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC_PASSWD,123,69,33,12
+    EDITTEXT        IDC_EDIT_TIME,161,112,53,16,ES_AUTOHSCROLL
+    LTEXT           "刷新时间",IDC_STATIC_TIME,122,116,34,13
+    PUSHBUTTON      "添加",IDC_BUTTON_ADDUSER,160,89,40,13
+    PUSHBUTTON      "删除",IDC_BUTTON_DELUSER,36,153,56,16
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,131,149,37,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,182,149,37,14
+    LTEXT           "12~55分钟",IDC_STATIC_TIMESCOPE,221,112,38,16
+END
+
+IDD_DIALOG7 DIALOG DISCARDABLE  0, 0, 298, 246
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "日志记录"
+FONT 10, "System"
+BEGIN
+    CONTROL         "日志记录管理",IDC_CHECK_ISLOG,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_DISABLED | WS_TABSTOP,9,11,61,10
+    CONTROL         "记录进入端口",IDC_CHECK_incommingPort,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,29,67,70,9
+    CONTROL         "记录出去端口",IDC_CHECK_outgoingPort,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,29,78,60,9
+    CONTROL         "记录进入ICMP类型",IDC_CHECK_incommingType,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,29,109,78,10
+    CONTROL         "记录出去ICMP类型",IDC_CHECK_outgoingType,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,29,121,77,9
+    CONTROL         "记录进入DOS",IDC_CHECK_incommingDOS,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,29,196,58,10
+    CONTROL         "记录出去DOS",IDC_CHECK_outgoingDOS,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,29,208,58,8
+    CONTROL         "记录进入IP",IDC_CHECK_incommingIP,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,29,131,60,10
+    CONTROL         "记录出去IP",IDC_CHECK_outgoingIP,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,29,144,61,10
+    CONTROL         "进行IP过滤层日志管理",IDC_CHECK_LOGIP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,26,95,8
+    GROUPBOX        "IP过滤层日志选项",IDC_STATIC_IPCHOOSE,18,37,97,202,
+                    WS_GROUP
+    CONTROL         "进行协议管理日志管理",IDC_CHECK_PROLOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,143,26,97,10
+    CONTROL         "记录IP和端口",IDC_CHECK_LOGIPPORT,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,161,50,60,10
+    CONTROL         "记录协议类型",IDC_CHECK_LOGKIND,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,161,69,62,10
+    CONTROL         "记录阻断URL",IDC_CHECK_LOGURL,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,162,91,62,12
+    CONTROL         "记录时间",IDC_CHECK_LOGTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,162,113,64,13
+    GROUPBOX        "协议层日志选项",IDC_STATIC_PROCHOOSE,143,40,97,120
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,148,185,47,11
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,148,217,47,11
+    CONTROL         "记录入组播",IDC_CHECK_InBroad,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,29,46,54,10
+    CONTROL         "记录出组播",IDC_CHECK_OutBroad,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,29,57,55,11
+    CONTROL         "记录入协议头太短",IDC_CHECK_InLength,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,29,87,82,10
+    CONTROL         "记录出协议头太短",IDC_CHECK_OutLength,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,29,97,79,8
+    CONTROL         "记录入可疑偏移量",IDC_CHECK_InOffset,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,30,154,79,10
+    CONTROL         "记录出可疑偏移量",IDC_CHECK_OutOffset,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,30,164,76,11
+    CONTROL         "记录入分段",IDC_CHECK_InMore,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,30,175,75,9
+    CONTROL         "记录出分段",IDC_CHECK_OutMore,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,30,184,77,11
+    CONTROL         "记录原路由",IDC_CHECK_SORCE_ROUTE,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,28,220,58,8
+END
+
+IDD_DIALOG10 DIALOG DISCARDABLE  0, 0, 260, 152
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "TCP端口设置"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "TCP端口设置",IDC_STATIC,15,9,228,116
+    LTEXT           "源出",IDC_STATIC,22,25,17,8
+    EDITTEXT        IDC_EDIT13,25,42,89,79,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "目的出",IDC_STATIC,134,26,25,8
+    EDITTEXT        IDC_EDIT15,139,42,89,79,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "取消",IDC_BUTTON2,124,133,50,12
+    PUSHBUTTON      "确认",IDC_BUTTON3,46,133,50,12
+END
+
+IDD_DIALOG11 DIALOG DISCARDABLE  0, 0, 259, 152
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "UDP端口设置"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "UDP端口设置",IDC_STATIC,9,8,235,119
+    LTEXT           "源出",IDC_STATIC,17,25,17,8
+    EDITTEXT        IDC_EDIT17,15,43,93,76,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "目的出",IDC_STATIC,129,25,25,8
+    EDITTEXT        IDC_EDIT19,132,43,93,76,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "确认",IDC_BUTTON1,47,133,50,12
+    PUSHBUTTON      "取消",IDC_BUTTON2,133,133,50,12
+END
+
+IDD_DIALOG12 DIALOG DISCARDABLE  0, 0, 259, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ICMP设置"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "拒绝入ICMP类型",IDC_STATIC,134,11,94,114,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT3,138,22,87,100,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | NOT WS_VISIBLE | WS_VSCROLL
+    PUSHBUTTON      "确认",IDC_BUTTON1,51,132,50,12
+    PUSHBUTTON      "取消",IDC_BUTTON2,136,132,50,12
+    GROUPBOX        "拒绝出ICMP类型",IDC_STATIC,27,11,94,114
+    EDITTEXT        IDC_EDIT4,31,22,87,100,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DIALOG13 DIALOG DISCARDABLE  0, 0, 260, 152
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "主机设置"
+FONT 10, "System"
+BEGIN
+    LTEXT           "主机IP:",IDC_STATIC,31,24,26,8
+    EDITTEXT        IDC_EDIT1,92,21,126,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST1,92,50,126,67,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "已配置的主机：",IDC_STATIC,31,51,57,8
+    PUSHBUTTON      "确认",IDC_BUTTON1,23,133,50,12
+    PUSHBUTTON      "取消",IDC_BUTTON2,95,133,50,12
+    PUSHBUTTON      "删除",IDC_DELETE,166,133,50,11
+END
+
+IDD_DMDLG DIALOG DISCARDABLE  0, 0, 334, 228
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DM区设置"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT3,20,47,129,124,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "外网访问控制",IDC_STATIC,13,20,146,158
+    EDITTEXT        IDC_EDIT4,179,47,129,124,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "内网访问控制",IDC_STATIC,172,20,146,158
+    LTEXT           "拒绝IP:",IDC_STATIC,178,31,32,8
+    PUSHBUTTON      "确认",IDC_BUTTON1,28,202,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON2,121,201,50,14
+    LTEXT           "拒绝IP:",IDC_STATIC,20,33,32,8
+END
+
+IDD_DIALOG19 DIALOG DISCARDABLE  0, 0, 164, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,25,39,50,16
+    PUSHBUTTON      "取消",IDCANCEL,82,39,50,16
+    CONTROL         "包过滤日志",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,19,56,10
+    CONTROL         "协议过滤日志",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,71,19,64,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FireWall1 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FireWall1\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FireWall1.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "FireWall1 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        VERTGUIDE, 7
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 292
+        TOPMARGIN, 11
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_DIALOG10, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_DIALOG11, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_DIALOG12, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DIALOG13, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_DMDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_DIALOG19, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  38, 38
+BEGIN
+    BUTTON      ID_OPTION
+    BUTTON      ID_STARTFIREWALL
+    BUTTON      ID_SHUTDOWNFIREWALL
+    BUTTON      ID_TOOL_LOG
+    BUTTON      ID_APP_EXIT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "FireWall1\n\nFireWa\n\n\nFireWall1.Document\nFireWa Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FireWall1"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "配置防火墙\n配置"
+    ID_FILE_OPEN            "查看日志信息\n日志"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "打开关闭防火墙\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "退出\n退出"
+    ID_EDIT_CUT             "关于\n关于"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STARTFIREWALL        "启动防火墙\n启动"
+    ID_SHUTDOWNFIREWALL     "关闭防火墙\n关闭"
+    ID_EXIT                 "退出应用程序\n退出"
+    ID_TOOL_CONFIG          "配置防火墙\n配置"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOL_CLOSE           "关于\n关于"
+    ID_CONFIG               "配置防火墙\n配置"
+    ID_TOOL_LOG             "查看日志信息\n日志"
+    ID_TOOL_OPEN_CLOSE      "打开防火墙\n打开"
+    ID_TOOL_OPEN            "关闭防火墙\n关闭"
+    ID_TOOL_EXIT            "退出应用程序\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTION               "配置防火墙\n配置"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FireWall1.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
